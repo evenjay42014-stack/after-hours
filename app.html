@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>After Hours — Night board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="side">
+      <a class="brand" href="index.html"><span class="mark">AH</span> After Hours</a>
+      <nav>
+        <button class="navbtn active" data-view="board">Night board</button>
+        <button class="navbtn" data-view="leads">Conversations</button>
+        <button class="navbtn" data-view="shop">Voice pack</button>
+        <button class="navbtn" data-view="report">Monday report</button>
+      </nav>
+      <p style="color:var(--muted);font-size:12px;line-height:1.5;margin-top:28px">Drafts only. You send. No prices. No fake dispatch.</p>
+      <a class="btn btn-ghost btn-slim" href="index.html" style="margin-top:16px">Site</a>
+    </aside>
+    <main class="main"><div id="view"></div></main>
+  </div>
+  <div id="modal" class="modal-bg hidden"><div class="modal"></div></div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>
